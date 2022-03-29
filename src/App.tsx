@@ -4,16 +4,16 @@ import MainLayout from './components/layouts/MainPage';
 import ContentList from './components/moleculs/ContentList';
 
 function App() {
-  return (
-     <MainLayout>
-       <div className='content'>
-          <h1>Simple content list</h1>
-          <ContentList characters={[]} />
-          <FetchMoreButton onClick={()=> {}}>Fetch more</FetchMoreButton>
-      </div>
-     </MainLayout>
-     
-  );
+    return (
+        <MainLayout>
+            <div className='content'>
+                <h1 className="text-3xl font-bold underline">Simple content list</h1>
+                <ContentList characters={[]} />
+                <FetchMoreButton onClick={() => { }}>Fetch more</FetchMoreButton>
+            </div>
+        </MainLayout>
+
+    );
 }
 
 export default App;
