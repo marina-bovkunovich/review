@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 export const getCards = (payload: any) => ({
   type: 'GET_CARDS',
   payload,

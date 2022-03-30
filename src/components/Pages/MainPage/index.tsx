@@ -2,10 +2,10 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from './redux';
-import { changeCharName, getCards } from './redux/actions/cardsAction';
+import { RootState } from '../../../redux';
+import { changeCharName, getCards } from '../../../redux/actions/cardsAction';
 
-const App: React.FC = () => {
+const MainPage: React.FC = () => {
   const cards = useSelector((state: RootState) => state.cards);
 
   const dispatch = useDispatch();
@@ -38,4 +38,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default MainPage;
