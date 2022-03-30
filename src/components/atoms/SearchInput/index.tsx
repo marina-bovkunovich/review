@@ -26,8 +26,9 @@ const SearchInput: React.FC<IProps> = ({onSearch}) => {
     }
 
   return (
-    <div className="SearchInput">
-      <input value={name} onChange={onSearchChange} onKeyPress={onKeyPressHandler} />
+    <div className="flex justify-center items-center" >
+      <input value={name} className= {'h-8 text-2xl border border-black mr-4'}
+      onChange={onSearchChange} onKeyPress={onKeyPressHandler} />
       <Button onClick={onSubmit}>Submit</Button>
     </div>
   );
